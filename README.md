@@ -42,7 +42,7 @@ The plot above shows distribution of the 'kills' column in the dataset as a bar 
 
  ### Interesting Aggregate Analysis
  
-'|   Total Kills |   Total Assists |   Total Deaths |\n|--------------:|----------------:|---------------:|\n|         90744 |          115420 |          54840 |\n|         65951 |          146571 |          67002 |\n|         75662 |          124670 |          57494 |\n|         19094 |          196947 |          69156 |\n|         59659 |          107754 |          63253 |'
+|   Total Kills |   Total Assists |   Total Deaths |\n|--------------:|----------------:|---------------:|\n|         90744 |          115420 |          54840 |\n|         65951 |          146571 |          67002 |\n|         75662 |          124670 |          57494 |\n|         19094 |          196947 |          69156 |\n|         59659 |          107754 |          63253 |
 
 Above is a table aggregating total kills, assists, and deaths by position. It shows a significant difference in kills and assists among positions, which junglers having more kills but fewer assists, while supports have relatively few kills but the highest amount of assists.
 
