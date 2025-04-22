@@ -41,8 +41,14 @@ The plot above shows distribution of the 'kills' column in the dataset as a bar 
  The plot above shows the distribution of players' kill/death/assist ratios by position, calculated as (kills + assists) / deaths. The medians are all quite close together but mid and bot lane players are tied for highest, indicating that they tend to contribute more kills and assists per life than other positions making them more valuable.
 
  ### Interesting Aggregate Analysis
- 
-|   Total Kills |   Total Assists |   Total Deaths |\n|--------------:|----------------:|---------------:|\n|         90744 |          115420 |          54840 |\n|         65951 |          146571 |          67002 |\n|         75662 |          124670 |          57494 |\n|         19094 |          196947 |          69156 |\n|         59659 |          107754 |          63253 |
+
+|   Total Kills |   Total Assists |   Total Deaths |
+|--------------:|----------------:|---------------:|
+|         90744 |          115420 |          54840 |
+|         65951 |          146571 |          67002 |
+|         75662 |          124670 |          57494 |
+|         19094 |          196947 |          69156 |
+|         59659 |          107754 |          63253 |
 
 Above is a table aggregating total kills, assists, and deaths by position. It shows a significant difference in kills and assists among positions, which junglers having more kills but fewer assists, while supports have relatively few kills but the highest amount of assists.
 
