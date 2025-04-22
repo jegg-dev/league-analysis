@@ -40,7 +40,7 @@ The plot above shows distribution of the 'kills' column in the dataset as a bar 
  ></iframe>
  The plot above shows the distribution of players' kill/death/assist ratios by position, calculated as (kills + assists) / deaths. The medians are all quite close together but mid and bot lane players are tied for highest, indicating that they tend to contribute more kills and assists per life than other positions making them more valuable.
 
- ### Interesting Aggregate Analysis
+### Interesting Aggregate Analysis
 
 |   Total Kills |   Total Assists |   Total Deaths |
 |--------------:|----------------:|---------------:|
