@@ -26,7 +26,7 @@ Below are the first few rows of the cleaned dataset:
  <iframe
  src="assets/univariate-distribution.html"
  width="500"
- height="200"
+ height="400"
  frameborder="0"
  ></iframe>
 The plot above shows distribution of the 'kills' column in the dataset as a bar chart of kill count distributions. The plot is heavily right skewed meaning most players do not get more than 1 or 2 kills per game, but the tail to the right may consist of higher kills by a given position. More analysis is necessary though...
@@ -35,7 +35,7 @@ The plot above shows distribution of the 'kills' column in the dataset as a bar 
  <iframe
  src="assets/bivariate-distribution.html"
  width="500"
- height="200"
+ height="400"
  frameborder="0"
  ></iframe>
  The plot above shows the distribution of players' kill/death/assist ratios by position, calculated as (kills + assists) / deaths. The medians are all quite close together but mid and bot lane players are tied for highest, indicating that they tend to contribute more kills and assists per life than other positions making them more valuable.
