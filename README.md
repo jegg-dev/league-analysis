@@ -29,3 +29,13 @@ Below are the first few rows of the cleaned dataset:
  height="600"
  frameborder="0"
  ></iframe>
+
+The plot above shows distribution of the 'kills' column in the dataset as a bar chart of kill count distributions. The plot is heavily right skewed meaning most players do not get more than 1 or 2 kills per game, but the tail to the right may consist of higher kills by a given position. More analysis is necessary though...
+
+### Bivariate Analysis
+ <iframe
+ src="assets/bivariate-distribution.html"
+ width="800"
+ height="600"
+ frameborder="0"
+ ></iframe>
