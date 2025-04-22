@@ -56,4 +56,23 @@ Above is a table aggregating total kills, assists, and deaths by position. It sh
 For the purposes of this analysis, being the "most valuable" position should entail contributing the most kills and assists while minimizing deaths. The KDA ratio captures this directly, but unfortunately there is not one clear winner. Middle and bottom laners appear to be the most valuable positions thanks to their high median ratios, while top lane is clearly the worst with a low median ratio (sorry top laners).
 
 ## Step 3: Framing a Prediction Problem
+### Setup
+It's time to make things more challenging. Now that we have some idea of how different positions perform, we can make a prediction about a player's position. More specifically, can we answer the qustion: what was a player's position, using their post-game stats? Considering this is post-game information, any player data (except for the position column obviously) would be fair game, but this analysis will exclude the 'champion' column. LoL players tend to pick from very specific groups of champions given that they are tailor made for a certain position, essentially making the prediction pointless if they were included.
+
+### Problem Type
+This is a multiclass classification problem because the goal is to train a model to make a prediction given a discrete set of positions, of which there are 5 (making it non-binary). The response variable will be position because this column directly indicates the true answer. 
+
+### Metric
+To assess the performance of the model, this analysis will use the accuracy metric because class-imbalance is not an issue for this dataset (each player has a different position on each team, so each position is represented equally). Thus, there is no need to worry about the accuracy of one position inflating the overall model performance. For this problem, it is a straight-forward approach to seeing how often the model is correct.
+
+## Step 4: Baseline Model
+### Features
+The baseline model for this analysis was very simple with only two features: 'earned gpm' and 'kills.' The 'earned gpm' column represents how much gold (valuable for player upgrades) a player earned per minute of the game and the 'kills' column remains the same as before. 'earned gpm' was included with the hopes that positions that do not standout by kills might stand out in the gold that they earn from other tasks in the game (like killing minions). Both 'earned gpm' and 'kills' are quantitative variables so they could be trained on without encodings.
+
+### Performance
+After making a train/test split (25% test data), fitting the model, and testing, it had an average accuracy of 42%. Its only strong suit was classifying supports with 81% accuracy. This is fairly bad performance considering that, from a gameplay perspective, each position's playstyle is fairly distinct, especially junglers which only got an accuracy of 38%.
+
+## Step 5: Final Model
+### New Features
+
 
