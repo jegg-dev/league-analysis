@@ -1,6 +1,3 @@
-# league-analysis
-A data analysis exploring League of Legends esports games with a final machine learning model to predict player positions. This is a final project submission for EECS 398: Practical Data Science at the University of Michigan.
-
 ## Step 1: Introduction
 The goal of this analysis is to find interesting insights into how player positions (i.e. top lane, jungle, mid lane, etc.) are exemplified by data. The first question investigated by this report is: which position is most valuable to their team? Every League of Legends (LoL) player likes to think they carry their team, but is there really one clear MVP?
 
