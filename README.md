@@ -25,17 +25,29 @@ Below are the first few rows of the cleaned dataset:
 ### Univariate Analysis
  <iframe
  src="assets/univariate-distribution.html"
- width="800"
- height="600"
+ width="1000"
+ height="1000"
  frameborder="0"
  ></iframe>
-
 The plot above shows distribution of the 'kills' column in the dataset as a bar chart of kill count distributions. The plot is heavily right skewed meaning most players do not get more than 1 or 2 kills per game, but the tail to the right may consist of higher kills by a given position. More analysis is necessary though...
 
 ### Bivariate Analysis
  <iframe
  src="assets/bivariate-distribution.html"
- width="800"
- height="600"
+ width="1000"
+ height="1000"
  frameborder="0"
  ></iframe>
+ The plot above shows the distribution of players' kill/death/assist ratios by position, calculated as (kills + assists) / deaths. The medians are all quite close together but mid and bot lane players are tied for highest, indicating that they tend to contribute more kills and assists per life than other positions making them more valuable.
+
+ ### Interesting Aggregate Analysis
+ 
+'|   Total Kills |   Total Assists |   Total Deaths |\n|--------------:|----------------:|---------------:|\n|         90744 |          115420 |          54840 |\n|         65951 |          146571 |          67002 |\n|         75662 |          124670 |          57494 |\n|         19094 |          196947 |          69156 |\n|         59659 |          107754 |          63253 |'
+
+Above is a table aggregating total kills, assists, and deaths by position. It shows a significant difference in kills and assists among positions, which junglers having more kills but fewer assists, while supports have relatively few kills but the highest amount of assists.
+
+### Can We Answer the Question?
+For the purposes of this analysis, being the "most valuable" position should entail contributing the most kills and assists while minimizing deaths. The KDA ratio captures this directly, but unfortunately there is not one clear winner. Middle and bottom laners appear to be the most valuable positions thanks to their high median ratios, while top lane is clearly the worst with a low median ratio (sorry top laners).
+
+## Step 3: Framing a Prediction Problem
+
