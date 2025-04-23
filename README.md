@@ -99,4 +99,8 @@ From the matrix you can see that the mid lane was the least accurately identifie
 This is an improvement over the baseline model in every way. The average accuracy increased to 81% (up 39 percentage-points), and while mid lane accuracy is still the weakest it jumped from 27% to 60%.
 
 ### Overall Evaluation
-The model is a significant improvement from baseline but still not ideal. It seems mid lane is very difficult to distinguish from the top and bottom lanes which makes sense considering those three positions share many similarities from the fact that they all consist of playing in lane with towers and minions.
+The model is a significant improvement from baseline but still not ideal. It seems mid lane is very difficult to distinguish from the top and bottom lanes which is logical considering those three positions share the similarity of playing in a lane with towers and minions. 
+
+
+## Final Note
+Unfortunately, I do not have the time to dedicate myself to becoming diamond tier, but this analysis was my best effort to appreciate the complexity of League of Legends, and maybe one day stop feeding in the bot lane...
