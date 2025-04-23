@@ -87,7 +87,7 @@ The model's performance is visualized using the confusion matrix below:
  <iframe
  src="assets/confusion-matrix.html"
  width="620"
- height="500"
+ height="550"
  frameborder="0"
  ></iframe>
 From the matrix you can see that the mid lane was the least accurately identified, often being confused for the top and bottom lanes. 
