@@ -87,7 +87,7 @@ The model's performance was improved using hyperparameter tuning with a 5-fold c
 The optimal parameter values were n_estimators=300, max_depth=20, and min_samples_split=2.
 
 ### Performance
-The models performance is visualized using the confusion matrix below:
+The model's performance is visualized using the confusion matrix below:
  <iframe
  src="assets/confusion-matrix.html"
  width="610"
