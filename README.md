@@ -79,5 +79,24 @@ There were a total of 7 features added and 1 feature removed from the final mode
 A existing feature of the dataset 'dpm' (damage per minute) was added to the model because mid laners also tend to have high damage output (by the design of their champions) and the model was still lacking accuracy in mid lane classification. 'damagetakenperminute' (damange taken per minute) was added to the model because it could identify positions that tend to be attacked more by the opposing team or are tankier (able to take more damage). 'damagemitigatedperminute' (damage mitigated per minute) represents preventing damage to other players on your team. It was added because the support position is meant to help other players from dying by mitigating damage. The feature 'cspm' (creep score per minute) was added because it counts killing minions, monsters, and wards which is typically common for mid lane players to do. Lastly, 'monsterkills' (monster kills) was added specifically to help identify junglers because that's where monsters spawn.
 
 ### Model Selection
-4 model algorithms were tested with the final feature selection including Random Forest, a multilayer perceptron network, Gaussian Naive Bayes, and K-Nearest Neighbors. The most accurate model was still the Random Forest model. The models performance was improved using hyper parameter tuning with a 5-fold cross validated grid search. Different values for the 'n_estimators' parameter were tested because it determines the number of trees in the algorithm, which will affect how complex decisions can be. 'max_depth' was tested because it determines depth of trees, allowing for further complexity and therefore possible accuracy. Lastly, 'min_samples_split' was tested because it affects when trees split, which could prevent overfitting or underfitting.
+4 model algorithms were tested with the final feature selection including Random Forest, a multilayer perceptron (MLP) network, Gaussian Naive Bayes, and K-Nearest Neighbors. Although the average accuracy of the Random Forest model and the MLP model were equal, the mid lane accuracy (the weakest for all of the models) was highest for the Random Forest method, making it the best option for the final model.
 
+### Hyperparameter Tuning
+The model's performance was improved using hyperparameter tuning with a 5-fold cross validated grid search. Different values for the 'n_estimators' parameter were tested because it determines the number of trees in the algorithm, which will affect how complex decisions can be. 'max_depth' was tested because it determines depth of trees, allowing for further complexity and therefore possible accuracy. Lastly, 'min_samples_split' was tested because it affects when trees split, which could prevent overfitting or underfitting.
+
+The optimal parameter values were n_estimators=300, max_depth=20, and min_samples_split=2.
+
+### Performance
+The models performance is visualized using the confusion matrix below:
+ <iframe
+ src="assets/confusion-matrix.html"
+ width="610"
+ height="450"
+ frameborder="0"
+ ></iframe>
+From the matrix you can see that the mid lane was the least accurately identified, often being confused for the top and bottom lanes. 
+
+This is an improvement over the baseline model in every way. The average accuracy increased to 81% (up 39 percentage-points), and while mid lane accuracy is still the weakest it jumped from 27% to 60%.
+
+### Overall Evaluation
+The model is a significant improvement from baseline but still not ideal. It seems mid lane is very difficult to distinguish from the top and bottom lanes which makes sense considering those three positions share many similarities from the fact that they all consist of playing in lane with towers and minions.
